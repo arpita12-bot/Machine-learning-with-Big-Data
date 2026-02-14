@@ -231,17 +231,16 @@ The objective of this task is to modify the WordCount.java program to:
 - Why Performance Changes
 
 #### 🚀 Output -
-
-
-# 🟢 PART 2 -- Apache Spark
+<img width="940" height="495" alt="image" src="https://github.com/user-attachments/assets/8c387e09-6398-4063-8058-1e4bf0b997a7" /><br>
+<img width="940" height="491" alt="image" src="https://github.com/user-attachments/assets/6a3740cc-73af-4413-ad2d-29972859e1e5" />
+------------------------------------------------------------------------
+# 🟢 PART 2 -- Apache Spark(PySpark)
+------------------------------------------------------------------------
 
 Dataset: Project Gutenberg books
-
 Schema:
-
-file_name (string)\
-text (string)
-
+ - file_name (string)\
+ - text (string)
 ------------------------------------------------------------------------
 
 # 📘 Metadata Extraction
@@ -254,80 +253,114 @@ Regex Used:
 -   Encoding → (?i)Character set encoding:`\s*`{=tex}(.+)
 
 Extracted using Spark regexp_extract().
-
 ------------------------------------------------------------------------
+#### 📘 Book Metadata Extraction and Analysis
+------------------------------------------------------------------------
+#### 🔍 Problem Statement -
 
-# 📊 Analysis Performed
+Extracts metadata from Project Gutenberg files and performs statistical analysis:
+- Books per year: Distribution of books by release year (1500-2026)
+- Language analysis: Most common languages in the corpus
+- Title statistics: Average title length
+- Validates data quality by identifying missing or invalid release years
 
--   Books released per year\
--   Most common language\
+#### 📊 Analysis Performed
+
+-   Books released per year
+-   Most common language
 -   Average title length
 
-Challenges: - Missing metadata\
-- Inconsistent formatting\
+Challenges: - Missing metadata
+- Inconsistent formatting
 - Noise in text
 
-------------------------------------------------------------------------
 
-# 📘 TF-IDF & Book Similarity
+- Highlights distinguishing words and reduces importance of common words.
+- Explain the regular expressions you used to extract the title, release date, language, and
+encoding. Discuss any challenges or limitations in using regular expressions for this task.
+- What are some potential issues with the extracted metadata (e.g., inconsistencies,
+missing values)? How would you handle these issues in a real-world scenario?
 
-## Term Frequency (TF)
+#### 🚀 Output -
 
-Measures frequency of word in document.
+<img width="940" height="178" alt="image" src="https://github.com/user-attachments/assets/256a0da7-a685-4273-a32b-14aed966e581" /><br>
+Count books per year:<br>
+<img width="591" height="781" alt="image" src="https://github.com/user-attachments/assets/631a8456-00df-4c1a-bb82-823937a24928" /><br>
+Most common language in the dataset:<br>
+<img width="645" height="409" alt="image" src="https://github.com/user-attachments/assets/562c6a1e-4c39-42d1-816d-066645fb1994" /><br>
+Average length of book titles (characters):<br>
+<img width="940" height="298" alt="image" src="https://github.com/user-attachments/assets/f0b81c86-5397-44c3-8526-ab4ff02b78ec" /><br>
 
-## Inverse Document Frequency (IDF)
 
-IDF = log(N / df)
-
-## TF-IDF
-
-TF-IDF = TF × IDF
-
-Highlights distinguishing words and reduces importance of common words.
-
-------------------------------------------------------------------------
-
-## Cosine Similarity
-
-Cosine(A,B) = (A·B) / (\|\|A\|\| \|\|B\|\|)
-
--   1 → Highly similar\
--   0 → Not similar
-
-Suitable because it normalizes document length and works well with
-sparse vectors.
 
 ------------------------------------------------------------------------
+#### 📘 TF-IDF and Book Similarity
+------------------------------------------------------------------------
+#### 🔍 Problem Statement -
+Implements text similarity analysis using Term Frequency-Inverse Document Frequency:
 
-# 📘 Author Influence Network
-
-Definition: Author A influences Author B if: 0 \< (year_B - year_A) ≤ X
-
-Represented as Spark DataFrame of directed edges: (author1, author2)
-
-Computed: - In-degree\
-- Out-degree
+- Cleans text (removes Gutenberg headers/footers, punctuation)
+- Tokenizes and removes stopwords using Spark ML
+- Computes TF-IDF vectors for each document
+- Calculates cosine similarity between book pairs
+- Identifies the top 5 most similar books to a target document (default: 10.txt)
 
 ------------------------------------------------------------------------
+#### 📘 Author Influence Network
+------------------------------------------------------------------------
+#### 🔍 Problem Statement -
+Constructs a directed graph representing potential author influences:
 
-# 🛠 Technologies Used
+- Edge definition: Author A → Author B if B published within X years after A (default X=5)
+- Graph metrics:
+- Out-degree: Number of authors potentially influenced by this author
+- In-degree: Number of authors who potentially influenced this author
+- Identifies most influential and most influenced authors
+  
+#### 🚀 Output -
+<img width="940" height="232" alt="image" src="https://github.com/user-attachments/assets/902622f4-417d-4da7-952d-bb043abbea51" /><br>
+Extract Author and Release Year:<br>
+<img width="940" height="402" alt="image" src="https://github.com/user-attachments/assets/f6b29d0c-f80b-475e-bec3-bc467e7e7e4f" /><br>
+Extract Release Year:<br>
+<img width="940" height="553" alt="image" src="https://github.com/user-attachments/assets/8bf546e2-d25b-4a48-b87b-416030e64a47" /><br>
+<img width="679" height="832" alt="image" src="https://github.com/user-attachments/assets/33c912f7-c83c-4225-8b83-ebed217bcdee" /><br>
 
--   Apache Hadoop\
--   HDFS\
--   Java\
--   Apache Spark\
--   PySpark\
--   Spark MLlib\
--   Regular Expressions\
--   TF-IDF\
--   Cosine Similarity
+ Construct Influence Network:<br>
+ <img width="592" height="839" alt="image" src="https://github.com/user-attachments/assets/19e39acf-ed7f-440d-b00c-a0c050df7f3e" /><br>
+
+ Compute In-Degree and Out-Degree:<br>
+ <img width="757" height="873" alt="image" src="https://github.com/user-attachments/assets/22ab5315-ffa9-403d-ae17-f7b984194263" /><br>
+ <img width="767" height="860" alt="image" src="https://github.com/user-attachments/assets/971875e9-91ec-4857-bd63-d68c27eb4780" /><br>
+
+ Top5:<br>
+ <img width="914" height="344" alt="image" src="https://github.com/user-attachments/assets/d85473aa-7ab6-45c7-bcb3-ca305967e3ec" /><br>
+ <img width="903" height="345" alt="image" src="https://github.com/user-attachments/assets/b5117f01-2840-4e95-95d0-f163359090f7" />
+
 
 ------------------------------------------------------------------------
+#### 🛠 Technologies Used
+------------------------------------------------------------------------
+Apache Hadoop(HDFS,Java)
+Apache Spark(PySpark)
+Unix set up
 
-# 📌 Conclusion
+
+------------------------------------------------------------------------
+#### Project Structure
+------------------------------------------------------------------------
+
+
+
+
+#### 📌 Conclusion
 
 This project demonstrates distributed computing fundamentals using
 Hadoop and scalable analytics using Apache Spark. It includes MapReduce
 implementation, performance tuning, metadata extraction, document
 similarity analysis, and influence network construction.
+
+
+
+Submitted By,
+- M25DE1004(Arpita Kundu) | Indian Institute Of Technology Jodhpur(IITJ)
 
