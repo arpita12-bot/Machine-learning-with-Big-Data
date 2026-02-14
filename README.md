@@ -247,7 +247,7 @@ The objective of this task is to modify the WordCount.java program to:
 <img width="940" height="491" alt="image" src="https://github.com/user-attachments/assets/1388de5b-18e4-4497-8097-d86e0944ae3f" />
 
 ------------------------------------------------------------------------
-# 🟢 PART 2 -- Apache Spark(PySpark)
+#### PART 2 -- Apache Spark(PySpark)
 ------------------------------------------------------------------------
 
 Dataset: Project Gutenberg books
