@@ -396,12 +396,6 @@ Extract Release Year:<br>
 - Download Pyspark(Apache spark)
 - Extract and set environment variables:
   
-------------------------------------------------------------------------
-#### Project Structure
-------------------------------------------------------------------------
-
-
-
 
 #### 📌 Conclusion
 
