@@ -91,7 +91,7 @@ wc1.txt <br>
 ------------------------------------------------------------------------
 #### 3️⃣ Reduce Phase Details
 ------------------------------------------------------------------------
-
+- Detailed explnation is mentioned in attached PDF document.
 #### Input to Reducer
 
 ("up", \[1,1,1,1\])
@@ -128,9 +128,13 @@ jar cf wordcount.jar WordCount\*.class
 #### 🚀 Output -
 Execution completed without errors.<br>
 <img width="940" height="491" alt="image" src="https://github.com/user-attachments/assets/fa5bdf3e-d113-4b8d-b484-3bd1365aabcf" /><br>
+
 <img width="940" height="491" alt="image" src="https://github.com/user-attachments/assets/c2a7abee-7f87-4c82-995a-4cd6647253f1" /><br>
+
 <img width="940" height="493" alt="image" src="https://github.com/user-attachments/assets/90d08e44-7b17-478a-bbb0-b7adb5e56563" /><br>
+
 <img width="940" height="493" alt="image" src="https://github.com/user-attachments/assets/b2b43d0d-f62f-4798-ba9a-8d8d7939a279" /><br>
+
 <img width="940" height="617" alt="image" src="https://github.com/user-attachments/assets/00a363df-dab3-4dd9-a468-c5aca335afca" />
 
 ------------------------------------------------------------------------
@@ -155,6 +159,7 @@ to file blocks\
 #### 🚀 Output -
 
 <img width="940" height="522" alt="image" src="https://github.com/user-attachments/assets/85f9fc9e-b230-44cf-99ac-01da0927477e" /><br>
+
 <img width="940" height="522" alt="image" src="https://github.com/user-attachments/assets/ea4cbc9b-3921-4bb8-b18d-407c30252b84" />
 
 ------------------------------------------------------------------------
@@ -180,8 +185,11 @@ The implementation must use Hadoop data types from org.apache.hadoop.io.
 
 The WordCount MapReduce pipeline is fully implemented.
 <img width="940" height="387" alt="image" src="https://github.com/user-attachments/assets/09af4c36-f303-4af7-912a-6afdc9ff828b" /><br>
+
 <img width="940" height="510" alt="image" src="https://github.com/user-attachments/assets/d309bd22-8d46-4952-877a-e7f702d5c98b" /><br>
+
 <img width="940" height="563" alt="image" src="https://github.com/user-attachments/assets/304afd3c-7869-42ee-9459-3f0cfad76d0d" /><br>
+
 <img width="940" height="380" alt="image" src="https://github.com/user-attachments/assets/aff7e5b1-3a20-495c-aa83-1a9f308354b2" />
 
 ------------------------------------------------------------------------
@@ -232,8 +240,11 @@ The objective of this task is to modify the WordCount.java program to:
 - Why Performance Changes
 
 #### 🚀 Output -
+
 <img width="940" height="495" alt="image" src="https://github.com/user-attachments/assets/8c387e09-6398-4063-8058-1e4bf0b997a7" /><br>
-<img width="940" height="491" alt="image" src="https://github.com/user-attachments/assets/6a3740cc-73af-4413-ad2d-29972859e1e5" />
+
+<img width="940" height="491" alt="image" src="https://github.com/user-attachments/assets/1388de5b-18e4-4497-8097-d86e0944ae3f" />
+
 ------------------------------------------------------------------------
 # 🟢 PART 2 -- Apache Spark(PySpark)
 ------------------------------------------------------------------------
@@ -272,8 +283,8 @@ Extracts metadata from Project Gutenberg files and performs statistical analysis
 -   Average title length
 
 Challenges: - Missing metadata
-- Inconsistent formatting
-- Noise in text
+-  Inconsistent formatting
+-  Noise in text
 
 
 - Highlights distinguishing words and reduces importance of common words.
@@ -306,6 +317,26 @@ Implements text similarity analysis using Term Frequency-Inverse Document Freque
 - Calculates cosine similarity between book pairs
 - Identifies the top 5 most similar books to a target document (default: 10.txt)
 
+Output:
+<img width="940" height="232" alt="image" src="https://github.com/user-attachments/assets/ab9a10ba-50a8-4f0e-8957-36dfe706ce89" /><br>
+
+Data Cleaning: convert to lowercase and remove punctuation<br>
+<img width="940" height="652" alt="image" src="https://github.com/user-attachments/assets/bf944cfa-449e-44fe-9ebf-24c2ef6c9ce8" /><br>
+
+Tokenize :<br>
+<img width="940" height="96" alt="image" src="https://github.com/user-attachments/assets/7f96bdc4-b756-4eef-943b-13e7582402c3" /><br>
+
+Remove stop words:<br>
+<img width="940" height="90" alt="image" src="https://github.com/user-attachments/assets/23524da9-4b76-4b9e-b365-6856e4e766b7" /><br>
+
+TF-IDF Calculation<br>
+<img width="835" height="384" alt="image" src="https://github.com/user-attachments/assets/443c69ea-0841-46a6-bc70-3f75740624c2" />
+
+
+
+
+
+
 ------------------------------------------------------------------------
 #### 📘 Author Influence Network
 ------------------------------------------------------------------------
@@ -320,10 +351,13 @@ Constructs a directed graph representing potential author influences:
   
 #### 🚀 Output -
 <img width="940" height="232" alt="image" src="https://github.com/user-attachments/assets/902622f4-417d-4da7-952d-bb043abbea51" /><br>
+
 Extract Author and Release Year:<br>
 <img width="940" height="402" alt="image" src="https://github.com/user-attachments/assets/f6b29d0c-f80b-475e-bec3-bc467e7e7e4f" /><br>
+
 Extract Release Year:<br>
 <img width="940" height="553" alt="image" src="https://github.com/user-attachments/assets/8bf546e2-d25b-4a48-b87b-416030e64a47" /><br>
+
 <img width="679" height="832" alt="image" src="https://github.com/user-attachments/assets/33c912f7-c83c-4225-8b83-ebed217bcdee" /><br>
 
  Construct Influence Network:<br>
@@ -331,10 +365,12 @@ Extract Release Year:<br>
 
  Compute In-Degree and Out-Degree:<br>
  <img width="757" height="873" alt="image" src="https://github.com/user-attachments/assets/22ab5315-ffa9-403d-ae17-f7b984194263" /><br>
+ 
  <img width="767" height="860" alt="image" src="https://github.com/user-attachments/assets/971875e9-91ec-4857-bd63-d68c27eb4780" /><br>
 
  Top5:<br>
  <img width="914" height="344" alt="image" src="https://github.com/user-attachments/assets/d85473aa-7ab6-45c7-bcb3-ca305967e3ec" /><br>
+ 
  <img width="903" height="345" alt="image" src="https://github.com/user-attachments/assets/b5117f01-2840-4e95-95d0-f163359090f7" />
 
 
