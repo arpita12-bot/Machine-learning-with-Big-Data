@@ -212,7 +212,7 @@ The process involves:
 - Merge Output to Local File
 
 #### 🚀 Output -
-<img width="940" height="536" alt="image" src="https://github.com/user-attachments/assets/d232a8fc-e036-4fb0-8b87-48f609f706f4" />
+
 
 
 ------------------------------------------------------------------------
