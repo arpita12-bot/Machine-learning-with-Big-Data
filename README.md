@@ -204,7 +204,8 @@ The process involves:
 - Merge Output to Local File
 
 #### 🚀 Output -
-<img width="940" height="431" alt="image" src="https://github.com/user-attachments/assets/3052446c-f9d4-43b5-bef4-c24614853c36" />
+<img width="940" height="536" alt="image" src="https://github.com/user-attachments/assets/d232a8fc-e036-4fb0-8b87-48f609f706f4" />
+
 
 ------------------------------------------------------------------------
 #### 8️⃣ HDFS File Operations and Replication Mechanism
