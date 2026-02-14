@@ -264,8 +264,7 @@ Regex Used:
 -   Release Date → (?i)Release Date:`\s*`{=tex}(.+)\
 -   Language → (?i)Language:`\s*`{=tex}(.+)\
 -   Encoding → (?i)Character set encoding:`\s*`{=tex}(.+)
-
-Extracted using Spark regexp_extract().
+-   Extracted using Spark regexp_extract().
 ------------------------------------------------------------------------
 #### 📘 Book Metadata Extraction and Analysis
 ------------------------------------------------------------------------
