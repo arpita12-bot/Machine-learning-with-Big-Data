@@ -39,8 +39,8 @@ The requirement is:
 
 The Hadoop WordCount example was successfully executed using:
 
-hdfs dfs -mkdir -p /lyrics/input
-hdfs dfs -put wc1.txt /lyrics/input
+hdfs dfs -mkdir -p /lyrics/input\
+hdfs dfs -put wc1.txt /lyrics/input\
 WordCount.java
 
 #### hadoop jar
