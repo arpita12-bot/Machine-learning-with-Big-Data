@@ -340,11 +340,25 @@ Extract Release Year:<br>
 ------------------------------------------------------------------------
 #### 🛠 Technologies Used
 ------------------------------------------------------------------------
-Apache Hadoop(HDFS,Java)
-Apache Spark(PySpark)
-Unix set up
+- Apache Hadoop(HDFS,Java)
+- Apache Spark(PySpark)
+- Unix set up
 
-
+------------------------------------------------------------------------
+#### SetUp
+------------------------------------------------------------------------
+#### Apache Hadoop & MapReduce
+- Install Java (JDK 8 or 11).
+- Download Apache Hadoop.
+- Extract and configure:
+   1. core-site.xml
+   2. hdfs-site.xml
+   3. mapred-site.xml
+   4. yarn-site.xml
+#### Apache Spark
+- Download Pyspark(Apache spark)
+- Extract and set environment variables:
+  
 ------------------------------------------------------------------------
 #### Project Structure
 ------------------------------------------------------------------------
