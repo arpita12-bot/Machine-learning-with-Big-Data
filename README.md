@@ -29,7 +29,7 @@ This assignment demonstrates practical implementation of:
 #### 🔍 Problem Statement -
 
 The objective of this task is to run and demonstrate the working of the WordCount example in Apache Hadoop, 
-as shown on the Apache Hadoop official website and discussed in class.
+as shown on the Apache Hadoop official website.
 
 #### 🧩 Solutions Implemented -
 The requirement is:
