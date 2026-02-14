@@ -213,6 +213,7 @@ The process involves:
 
 #### 🚀 Output -
 
+<img width="940" height="479" alt="image" src="https://github.com/user-attachments/assets/867a126e-ddda-4c05-95ca-5d712e451111" />
 
 
 ------------------------------------------------------------------------
