@@ -28,7 +28,8 @@ For documents D1.txt, D2.txt, D3.txt, and D4.txt, the following were constructed
 - Word 2-grams
 Duplicates were removed (unique k-grams only).
 
-#### Part A
+#### Part A: 
+
 Using 3-grams, MinHash signatures were built for D1 and D2 with:
 - t = 20
 - t = 60
@@ -38,7 +39,8 @@ Using 3-grams, MinHash signatures were built for D1 and D2 with:
 Approximate Jaccard similarities were reported for each value.<br>
 <img width="335" height="371" alt="image" src="https://github.com/user-attachments/assets/6034530b-d89c-4e1d-bac5-9d06904cadd4" /><br>
 
-#### Part B
+#### Part B:
+
 Exact Jaccard similarity was computed for:
 - All document pairs
 - All three types of k-grams
@@ -54,7 +56,7 @@ A hash family was constructed with:
 - h : k-grams → [m]
 - m > 10,000
 
-Part A
+Part A:
 
 MinHash signatures were generated for:
 - t = 20, 60, 150, 300, 600
@@ -63,7 +65,9 @@ Approximate similarities were compared.<br>
 <img width="302" height="65" alt="image" src="https://github.com/user-attachments/assets/4302bb90-9b9a-4a16-b742-c3bf5f5f569b" /><br>
 
 
-Part B – Best Value of t
+Part B :
+
+– Best Value of t
 - Small t → Faster but less accurate
 - Large t → More accurate but slower
 
@@ -80,14 +84,16 @@ Using:
 - t = 160 hash functions
 - Similarity threshold τ = 0.7
 
-Part A
+Part A:
+
 Optimal (r, b) values were selected to create a well-separated S-curve.<br>
 
 <img width="341" height="87" alt="image" src="https://github.com/user-attachments/assets/c64d440f-c475-48a2-9054-2f85de878662" /><br>
 
 <img width="410" height="296" alt="image" src="https://github.com/user-attachments/assets/934c6a42-e6e8-45e3-89ba-0af881a9ac63" /><br>
 
-Part B
+Part B:
+
 For each document pair, the probability of similarity > τ was computed.<br>
 
 <img width="527" height="301" alt="image" src="https://github.com/user-attachments/assets/db55b795-c6e9-4e8b-83fb-bced6641ffaf" /><br>
@@ -194,7 +200,8 @@ This project demonstrates practical implementation of:
 It highlights the trade-off between accuracy, computational efficiency, and scalability in Big Data similarity problems.
 
 
+Submitted By,
 
-
+M25DE1004(Arpita Kundu) | Indian Institute Of Technology Jodhpur(IITJ)
 
 
