@@ -169,6 +169,7 @@ Parameter selection depends on application requirements (precision vs recall tra
 ####  📂 Repository Structure
 ------------------------------------------------------------------------
 
+<img width="191" height="88" alt="image" src="https://github.com/user-attachments/assets/2015cd93-f96e-469f-a154-808bbd325037" /><br>
 
 ------------------------------------------------------------------------
 ####   📊 Key Learnings
