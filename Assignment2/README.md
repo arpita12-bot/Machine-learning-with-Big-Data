@@ -8,7 +8,7 @@
 
 ## 📌 Project Overview
 
-This project implements and evaluates:
+This assignment implements and evaluates:
   -  K-Gram Generation
   -  Exact Jaccard Similarity
   -  Min-Hashing
