@@ -192,7 +192,7 @@ Parameter selection depends on application requirements (precision vs recall tra
 ------------------------------------------------------------------------
 ####  📌 Conclusion
 ------------------------------------------------------------------------
-This project demonstrates practical implementation of:
+This assignment demonstrates practical implementation of:
 - MinHash for approximate similarity
 - LSH for scalable similarity search
 - Parameter tuning for balancing precision and recall
