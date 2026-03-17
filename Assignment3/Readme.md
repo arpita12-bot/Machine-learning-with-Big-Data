@@ -1,5 +1,5 @@
 
-#🎬 (ML with Big Data) Recommender Systems Assignment
+## 🎬 (ML with Big Data) Recommender Systems Assignment
 
 📌 Project Overview
 This project implements multiple recommendation system techniques using the MovieLens dataset, executed on Google Colab with Google Drive integration.
@@ -19,6 +19,99 @@ We use the MovieLens Dataset, which includes:
 
 please refer the [MovieLens Latest Small](https://grouplens.org/datasets/movielens/latest/) dataset (~1MB) on first run. Requires internet access. The dataset is saved to `ml-latest-small/` in the working directory.
 
+⚙️ Installation & Setup
+
+This project is designed to run on Google Colab, with data loaded from Google Drive.
+
+🔹 Step 1: Upload Dataset to Google Drive:
+    1. Download MovieLens dataset
+    2. Upload it to your Google Drive (e.g., inside a folder like /MovieLens/)
+    
+🔹 Step 2: Open Notebook in Colab
+    Upload or open the notebook:
+    m25de1004_CSL7110_Assignment3.ipynb
+    
+🔹 Step 3: Mount Google Drive
+    Run this in the first cell:
+    from google.colab import drive
+    drive.mount('/content/drive')
+    
+🔹 Step 4: Set Dataset Path
+    Update dataset path in your notebook:
+    data_path = "/content/drive/MyDrive/MovieLens/"
+    Make sure it matches your actual folder.
+    
+🔹 Step 5: Install Required Libraries
+    In Colab, run:
+    !pip install scikit-surprise
+
+  🚀 How to Run
+      1. Open the notebook in Google Colab
+      2. Mount Google Drive
+      3. Update dataset path
+      4. Run all cells sequentially
+
+🧠 Implemented Techniques
+🔹 1. Content-Based Filtering
+
+TF-IDF on movie genres
+
+Cosine similarity
+
+Movie-to-movie recommendations
+
+🔹 2. User Profile-Based Recommendation
+
+Weighted average of TF-IDF vectors
+
+Personalized recommendations
+
+🔹 3. Collaborative Filtering
+
+User-Based CF (similar users)
+
+Item-Based CF (similar items)
+
+🔹 4. Matrix Factorization (SVD)
+
+Decomposes user-item matrix
+
+Predicts missing ratings
+
+🔹 5. Hybrid Model
+
+🔹 6. Neural Network Model
+
+Learns user & movie embeddings
+
+Predicts ratings
+
+🔹 7. Reinforcement Learning
+
+Multi-Armed Bandit (ε-Greedy, UCB)
+
+Q-Learning approach
+
+🔹 8. Explainability
+
+Feature-based explanations
+
+Similar user/item explanations
+
+SHAP / LIME concepts
+
+📊 Evaluation Metrics
+
+RMSE (Root Mean Squared Error)
+
+Precision@K
+
+Recall@K
+
+📁 Project Structure
+├── m25de1004_CSL7110_Assignment3.ipynb
+├── README.md
+|-- 
 ## Notebooks Included
 
 | File | Tasks |
