@@ -1,5 +1,22 @@
 
-# Recommender Systems Assignment — README
+# Recommender Systems Assignment
+📌 Project Overview
+This project implements multiple recommendation system techniques using the MovieLens dataset, executed on Google Colab with Google Drive integration.
++ Content-Based Filtering (TF-IDF & User Profiles)
++ Collaborative Filtering (User-Based & Item-Based)
++ Matrix Factorization (SVD)
++ Hybrid Models
++ Neural Network-Based Recommender
++ Reinforcement Learning-Based Recommender
++ Explainability Techniques
+
+📂 Dataset
+We use the MovieLens Dataset, which includes:
++ User ratings
++ Movie metadata (genres)
++ User interactions
+
+please refer the [MovieLens Latest Small](https://grouplens.org/datasets/movielens/latest/) dataset (~1MB) on first run. Requires internet access. The dataset is saved to `ml-latest-small/` in the working directory.
 
 ## Notebooks Included
 
