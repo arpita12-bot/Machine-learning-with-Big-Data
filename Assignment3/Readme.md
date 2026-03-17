@@ -133,6 +133,26 @@ Part 4: Hybrid Recommendation Model:
 Part 5: Learning-Based Recommender Systems
 
 | Task 8: Content-Based Filtering with a neural network |
+| Task 9: Reinforcement Learning in Recommender Systems |
+
+Part 6: Explainability in Recommender Systems
+
+| Task 10: Feature-Based Explanations (For Content-Based Filtering) |
+| Task 11: Neighborhood-Based Explanations (For Collaborative Filtering) |
+| Task 12: Model-Agnostic Explainability (For Deep Learning Models) |
+| Task 13: Evaluating Explainability |
+
+
+⚠️ Notes
++ Mount Google Drive before running
++ Update dataset path correctly
++ Run cells sequentially
++ Some models(SVD, NN, RL) may take longer
 
 ---
+
+👩‍💻 Author
+Arpita Kundu | IITJ
+
+This assignment is for academic purposes only.
 
