@@ -21,9 +21,9 @@ We use the MovieLens Dataset, which includes:
 
 please refer the [MovieLens Latest Small](https://grouplens.org/datasets/movielens/latest/) dataset (~1MB) on first run. Requires internet access. The dataset is saved to `ml-latest-small/` in the working directory.
 
-⚙️ Installation & Setup
+⚙️ Installation & Setup<br>
 
-This project is designed to run on Google Colab, with data loaded from Google Drive.
+This project is designed to run on Google Colab, with data loaded from Google Drive.<br>
 
 🔹 Step 1: Upload Dataset to Google Drive:
 
@@ -56,87 +56,87 @@ This project is designed to run on Google Colab, with data loaded from Google Dr
     4. import sklearn
     5. import matplotlib
 
-🚀 How to Run
+🚀 How to Run :
+
     1. Open the notebook in Google Colab
     2. Mount Google Drive
     3. Update dataset path
     4. Run all cells sequentially
 
-🧠 Implemented Techniques
+🧠 Implemented Techniques :
+
 🔹 1. Content-Based Filtering
+
     + TF-IDF on movie genres
     + Cosine similarity
     + Movie-to-movie recommendations
     
 🔹 2. User Profile-Based Recommendation
+
     + Weighted average of TF-IDF vectors
     + Personalized recommendations
     
 🔹 3. Collaborative Filtering
+
     + User-Based CF (similar users)
     + Item-Based CF (similar items)
 🔹 4. Matrix Factorization (SVD)
+
     + Decomposes user-item matrix
     + Predicts missing ratings
     
-🔹 5. Hybrid Model
+🔹 5. Hybrid Model<br>
 
 🔹 6. Neural Network Model
+
     + Learns user & movie embeddings
     + Predicts ratings
     
 🔹 7. Reinforcement Learning
+
     + Multi-Armed Bandit (ε-Greedy, UCB)
     + Q-Learning approach
     
 🔹 8. Explainability
+
     + Feature-based explanations
     + Similar user/item explanations
     + SHAP / LIME concepts
 
-📊 Evaluation Metrics
+📊 Evaluation Metrics :
+
     + RMSE (Root Mean Squared Error)
     + Precision@K
     + Recall@K
 
-📁 Project Structure
-|--- m25de1004_CSL7110_Assignment3.ipynb
-|--- README.md
-|--- M25DE1004_CSL7110_Assignment3.pdf
-|--- CSL7110 Assignment 3- ML with Big Data.pdf
-|--- Datasets
+📁 Project Structure<br>
+
+|--- m25de1004_CSL7110_Assignment3.ipynb<br>
+|--- README.md<br>
+|--- M25DE1004_CSL7110_Assignment3.pdf<br>
+|--- CSL7110 Assignment 3- ML with Big Data.pdf<br>
+|--- Datasets<br>
 
 
-## Notebooks Included
+## Notebooks Included :
 
 | Tasks |
 |-------|
-Part 1: Content-Based Filtering:
-
+| Part 1: Content-Based Filtering: |
 | Task 1: Implementing TF-IDF Based Recommendation |
 | Task 2: User-Profile-Based Content Recommender |
-
-Part 2: Collaborative Filtering:
-
+| Part 2: Collaborative Filtering: |
 | Task 3: User-Based Collaborative Filtering |
 | Task 4: Item-Based Collaborative Filtering |
-
-Part 3: Matrix Factorization for Recommender Systems:
-
+| Part 3: Matrix Factorization for Recommender Systems: |
 | Task 5: Implementing SVD for Recommendations |
 | Task 6: Implementing Matrix Factorization with the Surprise Library |
-
-Part 4: Hybrid Recommendation Model:
-
+| Part 4: Hybrid Recommendation Model: |
 | Task 7: Implementing a Hybrid Recommendation Model |
-
-Part 5: Learning-Based Recommender Systems
-
+| Part 5: Learning-Based Recommender Systems |
 | Task 8: Content-Based Filtering with a neural network |
 | Task 9: Reinforcement Learning in Recommender Systems |
-
-Part 6: Explainability in Recommender Systems
-
+| Part 6: Explainability in Recommender Systems |
 | Task 10: Feature-Based Explanations (For Content-Based Filtering) |
 | Task 11: Neighborhood-Based Explanations (For Collaborative Filtering) |
 | Task 12: Model-Agnostic Explainability (For Deep Learning Models) |
