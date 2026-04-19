@@ -1,4 +1,4 @@
-# CSL7110 Assignment 4 — Clustering and PageRank
+# Assignment 4 — Clustering and PageRank
 
 **Name :** Arpita Kundu
 **Roll Number:** M25DE1004  
