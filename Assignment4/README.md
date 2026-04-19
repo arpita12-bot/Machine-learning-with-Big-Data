@@ -10,9 +10,9 @@
 
 This assignment is divided into three parts:
 
-1. **Part 1 — Clustering** (40 marks): Implement k-center and k-means++ clustering algorithms on Apache Spark using a spam detection dataset.
-2. **Part 2 — Web Search / Inverted Index** (40 marks): Build an inverted index and implement TF-IDF based search over a collection of webpages.
-3. **Part 3 — PageRank on Spark** (40 marks): Implement the iterative PageRank algorithm on a directed graph using Apache Spark.
+1. **Part 1 — Clustering** : Implement k-center and k-means++ clustering algorithms on Apache Spark using a spam detection dataset.
+2. **Part 2 — Web Search / Inverted Index** : Build an inverted index and implement TF-IDF based search over a collection of webpages.
+3. **Part 3 — PageRank on Spark** : Implement the iterative PageRank algorithm on a directed graph using Apache Spark.
 
 ---
 
